@@ -1,0 +1,17 @@
+:root {
+  // Primary colors
+  --theme-primary-main: #2872fa; // Основной синий
+  --theme-primary-dark: #1559ed; // Темно-синий (hover, active)
+
+  // Text colors
+  --theme-text-primary: #192a3d; // Основной текст (почти черный)
+  --theme-text-secondary: #3A4F66; // Вторичный текст (серо-синий)
+
+  // Surface colors
+  --theme-surface-light: #FAFBFC; // Светлая поверхность
+  --theme-surface-white: #ffffff; // Белая поверхность
+
+  // Border & divider colors
+  --theme-border-light: #e1e8ed; // Светлые границы
+  --theme-border-hover: #f2f5f7; // Границы при hover
+}

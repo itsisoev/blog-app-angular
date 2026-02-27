@@ -1,0 +1,10 @@
+a {
+  color: var(--theme-text-link);
+  text-decoration: none;
+}
+
+.custom-link {
+  &:hover {
+    color: var(--theme-primary-dark);
+  }
+}

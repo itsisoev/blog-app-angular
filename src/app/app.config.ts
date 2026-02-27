@@ -1,6 +1,6 @@
-import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
-import { provideRouter } from '@angular/router';
-import { routes } from './app.routes';
+import {ApplicationConfig, provideBrowserGlobalErrorListeners} from '@angular/core';
+import {provideRouter} from '@angular/router';
+import {routes} from './app.routes';
 import {LUCIDE_ICONS, LucideIconProvider} from 'lucide-angular';
 import {ICONS} from '@shared/constants/icons.constants';
 

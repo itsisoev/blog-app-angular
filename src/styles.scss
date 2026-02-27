@@ -1,0 +1,16 @@
+@use "themes/theme";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--theme-text-primary);
+  background-color: var(--theme-surface-light);
+}
+
+ul {
+  list-style: none;
+}

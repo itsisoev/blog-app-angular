@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9375rem 3.125rem;
+  background-color: var(--theme-surface-white);
+
+  &__left {
+    h2 {
+      font-size: 1.875rem;
+
+      span {
+        color: var(--theme-primary-main)
+      }
+    }
+  }
+
+  &__right {
+    ul {
+      gap: 2rem;
+      display: flex;
+      align-items: center;
+
+      li {
+        a {
+          gap: 0.2rem;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<div class="header">
+  <div class="header__left">
+    <h2>Blog <span>News</span></h2>
+  </div>
+
+  <div class="header__right">
+    <ul>
+      @for (link of HEADER_NAVIGATION(); track link.label) {
+        <li>
+          <a [routerLink]="link.route" class="custom-link">
+            {{ link.label }}
+          </a>
+        </li>
+      }
+    </ul>
+  </div>
+</div>
