@@ -7,11 +7,25 @@
     <ul>
       @for (link of HEADER_NAVIGATION(); track link.label) {
         <li>
-          <a [routerLink]="link.route" class="custom-link">
-            {{ link.label }}
+          <a [routerLink]="link.route" class="primary-link">
+            <lucide-icon [name]="link.icon" size="20" class="header__icon"></lucide-icon>
+            <span class="header__label">{{ link.label }}</span>
           </a>
         </li>
       }
+
+      <li>
+        <button class="primary-button header__profile-btn" (click)="togglePopup($event)">
+          <lucide-icon name="user" size="20" class="header__icon"></lucide-icon>
+          <span class="header__label">Профиль</span>
+        </button>
+      </li>
     </ul>
+
+    <ui-popup #popup [titlePopup]="titlePopup()" [(openPopup)]="openPopup">
+      <button class="btn-ghost">Мой профиль</button>
+      <button class="btn-ghost">Мои статьи</button>
+      <button class="btn-ghost btn-ghost--danger">Выйти</button>
+    </ui-popup>
   </div>
 </div>

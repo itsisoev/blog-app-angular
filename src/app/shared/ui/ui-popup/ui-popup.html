@@ -1,0 +1,16 @@
+@if (openPopup()) {
+  <div
+    class="popup"
+    [style.top.px]="position().top"
+    [style.left.px]="position().left"
+  >
+    <div class="popup__header">
+      <h4 class="popup__title">{{ titlePopup() }}</h4>
+      <button class="popup__close" (click)="close()">✕</button>
+    </div>
+
+    <div class="popup__main">
+      <ng-content></ng-content>
+    </div>
+  </div>
+}

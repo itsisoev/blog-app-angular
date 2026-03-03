@@ -1,3 +1,43 @@
 button {
+  border: none;
   font-family: "Open Sans", sans-serif;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.primary-button {
+  padding: 0.625rem 1.25rem;
+  color: white;
+  border-radius: 0.3125rem;
+  background-color: var(--theme-primary-main);
+
+  &:hover {
+    background-color: var(--theme-primary-dark);
+  }
+
+  &:disabled {
+    background-color: var(--theme-disabled);
+  }
+}
+
+.btn-ghost {
+  width: 100%;
+  padding: 0.625rem 1.25rem;
+  color: var(--theme-text-primary);
+  border-radius: 0.3125rem;
+  background-color: transparent;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s;
+
+  &:hover {
+    background-color: var(--theme-border-hover);
+    color: var(--theme-text-primary);
+  }
+
+  &:disabled {
+    color: var(--theme-disabled);
+    cursor: not-allowed;
+  }
 }

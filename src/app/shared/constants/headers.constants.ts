@@ -3,14 +3,17 @@ import {HeaderLink} from '@shared/models/header.model';
 export const HEADER_NAVIGATION: HeaderLink[] = [
   {
     label: 'Главная',
-    route: '/'
+    route: '/',
+    icon: 'House'
   },
   {
     label: 'Статьи',
-    route: '/'
+    route: '/',
+    icon: 'Newspaper'
   },
   {
-    label: 'Профиль',
-    route: '/'
+    label: 'Уведомление',
+    route: '/',
+    icon: 'Bell'
   }
 ];

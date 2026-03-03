@@ -1,7 +1,8 @@
-import {House, Newspaper, User} from 'lucide-angular';
+import {Bell, House, Newspaper, User} from 'lucide-angular';
 
 export const ICONS = {
   Newspaper,
   User,
-  House
+  House,
+  Bell,
 }
