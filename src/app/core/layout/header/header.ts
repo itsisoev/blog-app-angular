@@ -17,15 +17,12 @@ import {UiPopup} from '@shared/ui/ui-popup/ui-popup';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Header {
-  protected HEADER_NAVIGATION = signal<HeaderLink[]>(HEADER_NAVIGATION);
-
-  titlePopup = signal<string>("Меню профиля");
-
-  hamburgerMenu = signal<boolean>(false);
-  openPopup = signal<boolean>(false);
-
   popupRef = viewChild<UiPopup>('popup');
 
+  titlePopup = signal<string>("Меню профиля");
+  openPopup = signal<boolean>(false);
+
+  protected HEADER_NAVIGATION = signal<HeaderLink[]>(HEADER_NAVIGATION);
 
   togglePopup(event: MouseEvent): void {
     const isOpen = !this.openPopup();
